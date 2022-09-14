@@ -7,9 +7,10 @@ when :weight
   elsif from == :pounds
     kg = value / 2.20
     puts "#{kg.round(2)} kg"
-  else
+else
     puts 'please provide a valid weight from value'
-  end
+end
+  
 when :distance
   if from == :miles
     km = value * 1.60934
@@ -17,9 +18,10 @@ when :distance
   elsif from == :km
     mile = value / 1.60934
     puts "#{mile.round(2)} miles"
-  else
+else
     puts 'please a provide a valid distance from value'
-  end
+end
+  
 when :temperature
   if from == :celsius
     kelvin = value + 273.15
@@ -34,6 +36,7 @@ else
   puts 'parameter can only be weight, distance or temperature'
 end
 end
+
 #convert(:weight, 2, :kg, :pounds)
 #convert(:weight, 40, :pounds, :kg)
 
